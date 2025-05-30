@@ -1,7 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 import Image from "next/image"
-import VerticalTimelineSaaS from "./vertical-timeline-saas" // Import the new component
+import VerticalTimelineAdvanced from "./vertical-timeline-advanced" // Import the new component
 
 export default function FeaturesSection() {
   const features = [
@@ -123,7 +123,7 @@ export default function FeaturesSection() {
       </motion.div>
 
       {/* Vertical SaaS Timeline Section */}
-      <VerticalTimelineSaaS />
+      <VerticalTimelineAdvanced />
     </div>
   )
 }
