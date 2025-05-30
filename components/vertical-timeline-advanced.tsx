@@ -86,7 +86,7 @@ const TimelineItem = ({ item, isActive }) => {
           {item.subDescription && <p className="text-gray-600 mb-3 text-sm">{item.subDescription}</p>}
           <p className="text-gray-600 mb-4 leading-relaxed">{item.description}</p>
           {item.listItems && (
-            <ul className="space-y-2 mb-4">
+            <ul className="space-y-3 mb-6">
               {item.listItems.map((listItem, idx) => (
                 <li key={idx} className="flex items-center text-gray-700">
                   <Check className="w-5 h-5 text-blue-500 mr-2 flex-shrink-0" />
@@ -96,7 +96,7 @@ const TimelineItem = ({ item, isActive }) => {
             </ul>
           )}
           {item.features && (
-            <ol className="flex flex-col sm:flex-row sm:items-center gap-4 md:gap-6 mt-6">
+            <ol className="flex flex-col sm:flex-row sm:items-center gap-4 md:gap-6 mt-8">
               {item.features.map((feature, idx) => (
                 <li key={idx} className="flex flex-col items-center sm:items-start text-center sm:text-left">
                   <feature.icon className="w-8 h-8 text-blue-600 mb-2" />
@@ -123,9 +123,9 @@ const TimelineItem = ({ item, isActive }) => {
       {/* Timeline Number - positioned absolutely relative to the central line */}
       <motion.div
         className={`absolute left-1/2 -translate-x-1/2 top-0 md:top-1/2 md:-translate-y-1/2 z-10
-                    flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full border-4 md:border-8 border-white
-                    font-bold text-lg transition-all duration-500
-                    ${isActive ? "bg-blue-600 text-white shadow-lg scale-110" : "bg-gray-300 text-gray-700 shadow-md"}`}
+                  flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full border-4 md:border-8 border-white
+                  font-bold text-lg transition-all duration-500
+                  ${isActive ? "bg-blue-600 text-white shadow-lg scale-110" : "bg-gray-300 text-gray-700 shadow-md"}`}
         style={{ marginTop: item.align === "left" && item.id !== 1 ? "2rem" : "0" }} // Adjust vertical position for mobile better stacking
       >
         {item.id}
