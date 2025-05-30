@@ -166,7 +166,7 @@ export default function DeveloperApiSection() {
                   <div key={i}>{i + 1}</div>
                 ))}
               </div>
-              <pre className="pl-10 overflow-x-auto">
+              <pre key={activeLanguage} className="pl-10 overflow-x-auto">
                 <code className={`language-${activeLanguage.toLowerCase()}`}>{currentCode}</code>
               </pre>
             </div>
