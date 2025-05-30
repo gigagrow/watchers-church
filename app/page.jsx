@@ -1,11 +1,11 @@
 import Component from "../animated-banner.jsx"
-import WhyChooseUsSection from "../components/why-choose-us-section"
+import FeaturesSection from "../components/features-section.tsx"
 
 export default function Page() {
   return (
     <>
       <Component />
-      <WhyChooseUsSection />
+      <FeaturesSection />
     </>
   )
 }
