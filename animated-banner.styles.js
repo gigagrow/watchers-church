@@ -164,7 +164,7 @@ export const bannerStyles = {
     position: "relative",
     zIndex: 30,
     margin: "0 auto",
-    paddingLeft: isMobile ? "1rem" : "1.5rem",
+    paddingLeft: isMobile ? "100" : "150",
     paddingRight: isMobile ? "1rem" : "1.5rem",
     paddingTop: isMobile ? "2rem" : "4rem",
     paddingBottom: isMobile ? "2rem" : "4rem",
