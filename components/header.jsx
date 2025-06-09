@@ -239,6 +239,7 @@ export default function Header() {
 
           {/* Secondary Header Bar (Content remains the same) */}
           <div style={styles.secondaryHeaderBar}>
+               <div style={styles.headerContentWrapper}>
             <div style={{ ...styles.secondaryHeaderContainer, ...(!isMobile && styles.secondaryHeaderContainerMd) }}>
               <div style={styles.secondaryHeaderFlex}>
                 {!isMobile && (
@@ -346,6 +347,7 @@ export default function Header() {
                   )}
                 </div>
               </div>
+            </div>
             </div>
           </div>
 
