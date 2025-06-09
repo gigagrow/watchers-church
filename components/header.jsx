@@ -469,9 +469,7 @@ export default function Header() {
                     </div>
                   </div>
                 )}
-                <div style={styles.logoContainer}>
-                  <span style={styles.logoText}>Watch Altars</span>
-                </div>
+                
                 <div style={styles.rightSection}>
                   {!isMobile && (
                     <a
