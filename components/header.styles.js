@@ -126,8 +126,9 @@ export const headerContentWrapper = {
   paddingLeft: "1rem",
   paddingRight: "1rem",
   display: "flex",
-  alignItems: "center",
-  justifyContent: "space-between",
+  flexDirection: "row", // <--- add this!
+  alignItems: "center", // <--- center items vertically
+  justifyContent: "space-between", // <--- space between left and right
 };
 
 export const secondaryHeaderContainer = { ...topNavBarContainer };
