@@ -359,16 +359,7 @@ export default function Header() {
                         ),
                     )}
                   </div>
-                  {!isMobile && (
-                    <a
-                      href="#"
-                      onMouseEnter={() => handleElementHover("aiWorkspaceLink", true)}
-                      onMouseLeave={() => handleElementHover("aiWorkspaceLink", false)}
-                      style={styles.supportLinkMd(hoverStates["aiWorkspaceLink"])}
-                    >
-                      A.I. WORKSPACE
-                    </a>
-                  )}
+                  
                   {isMobile && (
                     <button
                       onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
