@@ -423,7 +423,26 @@ export default function Header() {
                       SUPPORT
                     </a>
                   )}
-                  
+                  {!isMobile && (
+                    <a
+                      href="#"
+                      onMouseEnter={() => handleElementHover("aiWorkspaceLink", true)}
+                      onMouseLeave={() => handleElementHover("aiWorkspaceLink", false)}
+                      style={styles.supportLinkMd(hoverStates["aiWorkspaceLink"])}
+                    >
+                      A.I. WORKSPACE
+                    </a>
+                  )}
+                  {isMobile && (
+                    <button
+                      onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                      onMouseEnter={() => handleElementHover("mobileMenuBtn", true)}
+                      onMouseLeave={() => handleElementHover("mobileMenuBtn", false)}
+                      style={styles.mobileMenuButton(hoverStates["mobileMenuBtn"])}
+                    >
+                      {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
