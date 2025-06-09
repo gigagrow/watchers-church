@@ -302,24 +302,7 @@ export default function Header() {
                         </div>
                       )}
                     </div>
-                    <div style={styles.faithLinksContainerMd}>
-                      <a
-                        href="#"
-                        onMouseEnter={() => handleElementHover("faithLink1", true)}
-                        onMouseLeave={() => handleElementHover("faithLink1", false)}
-                        style={styles.faithLink(hoverStates["faithLink1"])}
-                      >
-                        NEW TO THE FAITH?
-                      </a>
-                      <a
-                        href="#"
-                        onMouseEnter={() => handleElementHover("faithLink2", true)}
-                        onMouseLeave={() => handleElementHover("faithLink2", false)}
-                        style={styles.faithLink(hoverStates["faithLink2"])}
-                      >
-                        RECEIVE JESUS
-                      </a>
-                    </div>
+                    
                   </div>
                 )}
                 <div style={styles.logoContainer}>
