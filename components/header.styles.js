@@ -70,9 +70,10 @@ export const headerElement = {
 }
 
 export const topNavBar = {
-  background: "linear-gradient(to bottom right, #1E293B, #3B82F6, #8B5CF6)",
+  background: "linear-gradient(to bottom right, #0F172A, #1D4ED8, #6D28D9)",
   color: colors.white,
 }
+
 
 export const topNavBarContainer = {
   margin: "0 auto",
