@@ -118,8 +118,8 @@ export const secondaryHeaderBar = {
   borderBottom: `1px solid ${colors.gray200}`,
 }
 
-export const secondaryHeaderContainer = { ...topNavBarContainer }
-export const secondaryHeaderContainerMd = { ...topNavBarContainerMd }
+export const secondaryHeaderContainer = { ...topNavBarContainer };
+export const secondaryHeaderContainerMd = { ...topNavBarContainerMd };
 
 export const secondaryHeaderFlex = {
   display: "flex",
@@ -127,34 +127,36 @@ export const secondaryHeaderFlex = {
   justifyContent: "space-between",
   paddingTop: "0.75rem",
   paddingBottom: "0.75rem",
-}
+};
 
 export const leftSectionMd = {
   display: "flex",
   alignItems: "center",
   gap: "1.5rem",
-}
+};
 
 export const countryLangButton = (isHovered) => ({
   display: "flex",
   alignItems: "center",
+  justifyContent: "center", // center the content horizontally
   gap: "0.5rem",
   backgroundColor: isHovered ? colors.gray50 : "transparent",
-  padding: "0.25rem 0.5rem",
+  padding: "0.5rem 1rem", // match nav item spacing
+  minWidth: "120px",      // forces consistent width with nav items (adjust as needed)
   borderRadius: "0.25rem",
   transition: "background-color 0.2s ease-in-out",
   border: "none",
   cursor: "pointer",
-})
+});
 
 export const countryFlag = {
   fontSize: "1.125rem",
-}
+};
 
 export const dropdownIcon = {
   color: colors.gray600,
   transition: "transform 0.2s ease-in-out",
-}
+};
 
 export const dropdownMenu = {
   position: "absolute",
@@ -164,12 +166,13 @@ export const dropdownMenu = {
   backgroundColor: colors.white,
   border: `1px solid ${colors.gray200}`,
   borderRadius: "0.5rem",
-  boxShadow: "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)",
+  boxShadow:
+    "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)",
   paddingTop: "0.5rem",
   paddingBottom: "0.5rem",
   minWidth: "200px",
   zIndex: 60,
-}
+};
 
 export const countryDropdownItem = (isHovered) => ({
   width: "100%",
@@ -182,51 +185,52 @@ export const countryDropdownItem = (isHovered) => ({
   textAlign: "left",
   border: "none",
   cursor: "pointer",
-})
+});
 
 export const countryName = {
   fontSize: "0.875rem",
   fontWeight: 500,
   color: colors.gray700,
-}
+};
 
-export const langName = { ...countryName }
+export const langName = { ...countryName };
+
 export const langCode = {
   fontSize: "0.75rem",
   color: colors.gray500,
-}
+};
 
 export const faithLinksContainerMd = {
   display: "flex",
   alignItems: "center",
   gap: "1.5rem",
   fontSize: "0.875rem",
-}
+};
 
 export const faithLink = (isHovered) => ({
   color: isHovered ? colors.purple600 : colors.gray600,
   fontWeight: 500,
   transition: "color 0.2s ease-in-out",
   textDecoration: "none",
-})
+});
 
 export const logoContainer = {
   display: "flex",
   alignItems: "center",
   gap: "0.5rem",
-}
+};
 
 export const logoText = {
   fontSize: "1.25rem",
   fontWeight: 700,
   color: colors.gray900,
-}
+};
 
 export const rightSection = {
   display: "flex",
   alignItems: "center",
   gap: "1rem",
-}
+};
 
 export const supportLinkMd = (isHovered) => ({
   fontSize: "0.875rem",
@@ -234,13 +238,13 @@ export const supportLinkMd = (isHovered) => ({
   color: isHovered ? colors.purple600 : colors.gray600,
   transition: "color 0.2s ease-in-out",
   textDecoration: "none",
-})
+});
 
 export const socialIconsContainerSm = {
   display: "flex",
   alignItems: "center",
   gap: "0.75rem",
-}
+};
 
 export const socialIconLink = (isHovered, special) => ({
   width: "2rem",
@@ -248,19 +252,23 @@ export const socialIconLink = (isHovered, special) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  color: special ? colors.white : isHovered ? colors.purple600 : colors.gray600,
+  color: special
+    ? colors.white
+    : isHovered
+    ? colors.purple600
+    : colors.gray600,
   backgroundColor: special
     ? isHovered
       ? "linear-gradient(to right, #1D4ED8, #7E22CE)"
       : "linear-gradient(to right, #2563EB, #9333EA)"
     : isHovered
-      ? colors.gray50
-      : "transparent",
+    ? colors.gray50
+    : "transparent",
   borderRadius: "9999px",
   transition: "all 0.2s ease-in-out",
   transform: isHovered ? "scale(1.1)" : "scale(1)",
   textDecoration: "none",
-})
+});
 
 export const mobileMenuButton = (isHovered) => ({
   padding: "0.5rem",
@@ -269,7 +277,8 @@ export const mobileMenuButton = (isHovered) => ({
   border: "none",
   cursor: "pointer",
   outline: "none",
-})
+});
+
 
 export const mainNavDesktop = {
   backgroundColor: colors.white,
