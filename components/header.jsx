@@ -390,65 +390,7 @@ export default function Header() {
               <div style={styles.secondaryHeaderFlex}>
                 {!isMobile && (
                   <div style={styles.leftSectionMd}>
-                    <div style={{ position: "relative" }}>
-                      <button
-                        onClick={() => setShowCountryDropdown((prev) => !prev)}
-                        onMouseEnter={() => handleElementHover("countryBtn", true)}
-                        onMouseLeave={() => handleElementHover("countryBtn", false)}
-                        style={styles.countryLangButton(hoverStates["countryBtn"])}
-                      >
-                        <span style={styles.countryFlag}>🇺🇸</span>
-                        <ChevronDown size={14} style={styles.dropdownIcon} />
-                      </button>
-                      {showCountryDropdown && (
-                        <div style={styles.dropdownMenu}>
-                          {countries.map((country) => (
-                            <button
-                              key={country.code}
-                              onClick={() => {
-                                setShowCountryDropdown(false)
-                              }}
-                              onMouseEnter={() => handleElementHover(`countryItem-${country.code}`, true)}
-                              onMouseLeave={() => handleElementHover(`countryItem-${country.code}`, false)}
-                              style={styles.countryDropdownItem(hoverStates[`countryItem-${country.code}`])}
-                            >
-                              <span style={styles.countryFlag}>{country.flag}</span>
-                              <span style={styles.countryName}>{country.name}</span>
-                            </button>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                    <div style={{ position: "relative" }}>
-                      <button
-                        onClick={() => setShowLanguageDropdown((prev) => !prev)}
-                        onMouseEnter={() => handleElementHover("langBtn", true)}
-                        onMouseLeave={() => handleElementHover("langBtn", false)}
-                        style={styles.countryLangButton(hoverStates["langBtn"])}
-                      >
-                        <Globe size={16} style={styles.dropdownIcon} />
-                        <span style={styles.langName}>EN</span>
-                        <ChevronDown size={14} style={styles.dropdownIcon} />
-                      </button>
-                      {showLanguageDropdown && (
-                        <div style={{ ...styles.dropdownMenu, minWidth: "150px" }}>
-                          {languages.map((language) => (
-                            <button
-                              key={language.code}
-                              onClick={() => {
-                                setShowLanguageDropdown(false)
-                              }}
-                              onMouseEnter={() => handleElementHover(`langItem-${language.code}`, true)}
-                              onMouseLeave={() => handleElementHover(`langItem-${language.code}`, false)}
-                              style={styles.countryDropdownItem(hoverStates[`langItem-${language.code}`])}
-                            >
-                              <span style={styles.langName}>{language.name}</span>
-                              <span style={styles.langCode}>{language.code}</span>
-                            </button>
-                          ))}
-                        </div>
-                      )}
-                    </div>
+                    
                     <div style={styles.faithLinksContainerMd}>
                       <a
                         href="#"
