@@ -483,49 +483,7 @@ export default function Header() {
                       SUPPORT
                     </a>
                   )}
-                  <div style={!isMobile ? styles.socialIconsContainerSm : { display: "none" }}>
-                    {[
-                      { icon: Instagram, href: "#" },
-                      { icon: Twitter, href: "#" },
-                      { icon: Facebook, href: "#" },
-                      { icon: Youtube, href: "#", hideOnMobile: true },
-                      { icon: Linkedin, href: "#", hideOnMobile: true },
-                      { icon: ShoppingCart, href: "#", special: true },
-                    ].map(
-                      ({ icon: Icon, href, special, hideOnMobile }, index) =>
-                        (!hideOnMobile || !isMobile) && (
-                          <a
-                            key={index}
-                            href={href}
-                            onMouseEnter={() => handleElementHover(`socialLink-${index}`, true)}
-                            onMouseLeave={() => handleElementHover(`socialLink-${index}`, false)}
-                            style={styles.socialIconLink(hoverStates[`socialLink-${index}`], special)}
-                          >
-                            <Icon size={16} />
-                          </a>
-                        ),
-                    )}
-                  </div>
-                  {!isMobile && (
-                    <a
-                      href="#"
-                      onMouseEnter={() => handleElementHover("aiWorkspaceLink", true)}
-                      onMouseLeave={() => handleElementHover("aiWorkspaceLink", false)}
-                      style={styles.supportLinkMd(hoverStates["aiWorkspaceLink"])}
-                    >
-                      A.I. WORKSPACE
-                    </a>
-                  )}
-                  {isMobile && (
-                    <button
-                      onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                      onMouseEnter={() => handleElementHover("mobileMenuBtn", true)}
-                      onMouseLeave={() => handleElementHover("mobileMenuBtn", false)}
-                      style={styles.mobileMenuButton(hoverStates["mobileMenuBtn"])}
-                    >
-                      {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-                    </button>
-                  )}
+                  
                 </div>
               </div>
             </div>
