@@ -131,7 +131,7 @@ export const secondaryHeaderFlex = {
 export const leftSectionMd = {
   display: "flex",
   alignItems: "center",
-  gap: "1.5rem",
+  gap: "0.2rem",
 }
 
 export const countryLangButton = (isHovered) => ({
