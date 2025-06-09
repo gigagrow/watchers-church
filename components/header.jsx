@@ -326,16 +326,7 @@ export default function Header() {
                   <span style={styles.logoText}>Watch Altars</span>
                 </div>
                 <div style={styles.rightSection}>
-                  {!isMobile && (
-                    <a
-                      href="#"
-                      onMouseEnter={() => handleElementHover("supportLink", true)}
-                      onMouseLeave={() => handleElementHover("supportLink", false)}
-                      style={styles.supportLinkMd(hoverStates["supportLink"])}
-                    >
-                      SUPPORT
-                    </a>
-                  )}
+                  
                   <div style={!isMobile ? styles.socialIconsContainerSm : { display: "none" }}>
                     {[
                       { icon: Instagram, href: "#" },
