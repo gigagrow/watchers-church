@@ -118,7 +118,7 @@ export const secondaryHeaderBar = {
   borderBottom: `1px solid ${colors.gray200}`,
 }
 
-// This keeps your header centered and limited to 1100px
+// Header wrapper: centers content max 1100px
 export const headerContentWrapper = {
   maxWidth: "1100px",
   width: "100%",
@@ -126,26 +126,37 @@ export const headerContentWrapper = {
   paddingLeft: "1rem",
   paddingRight: "1rem",
   display: "flex",
-  flexDirection: "row", // <--- add this!
-  alignItems: "center", // <--- center items vertically
-  justifyContent: "space-between", // <--- space between left and right
+  flexDirection: "row",
+  alignItems: "center",
+  justifyContent: "space-between",
 };
 
+// Secondary header container & flex
 export const secondaryHeaderContainer = { ...topNavBarContainer };
 export const secondaryHeaderContainerMd = { ...topNavBarContainerMd };
 
-// Only apply vertical padding here
 export const secondaryHeaderFlex = {
   paddingTop: "0.75rem",
   paddingBottom: "0.75rem",
 };
 
+// Left section — language, logo, faith links
 export const leftSectionMd = {
   display: "flex",
+  flex: "1 1 auto",
   alignItems: "center",
   gap: "1.5rem",
 };
 
+// Right section — support, social icons
+export const rightSection = {
+  display: "flex",
+  flex: "0 0 auto",
+  alignItems: "center",
+  gap: "1rem",
+};
+
+// Language button
 export const countryLangButton = (isHovered) => ({
   display: "flex",
   alignItems: "center",
@@ -153,7 +164,7 @@ export const countryLangButton = (isHovered) => ({
   gap: "0.5rem",
   backgroundColor: isHovered ? colors.gray50 : "transparent",
   padding: "0.5rem 1rem",
-  minWidth: "120px", // consistent with nav width
+  minWidth: "120px",
   borderRadius: "0.25rem",
   transition: "background-color 0.2s ease-in-out",
   border: "none",
@@ -211,13 +222,16 @@ export const langCode = {
   color: colors.gray500,
 };
 
+// Faith links container
 export const faithLinksContainerMd = {
   display: "flex",
   alignItems: "center",
   gap: "1.5rem",
   fontSize: "0.875rem",
+  flexWrap: "nowrap",
 };
 
+// Faith link style
 export const faithLink = (isHovered) => ({
   color: isHovered ? colors.purple600 : colors.gray600,
   fontWeight: 500,
@@ -225,10 +239,12 @@ export const faithLink = (isHovered) => ({
   textDecoration: "none",
 });
 
+// Logo styles
 export const logoContainer = {
   display: "flex",
   alignItems: "center",
   gap: "0.5rem",
+  flexShrink: 0,
 };
 
 export const logoText = {
@@ -237,12 +253,7 @@ export const logoText = {
   color: colors.gray900,
 };
 
-export const rightSection = {
-  display: "flex",
-  alignItems: "center",
-  gap: "1rem",
-};
-
+// Support link
 export const supportLinkMd = (isHovered) => ({
   fontSize: "0.875rem",
   fontWeight: 500,
@@ -251,6 +262,7 @@ export const supportLinkMd = (isHovered) => ({
   textDecoration: "none",
 });
 
+// Social icons
 export const socialIconsContainerSm = {
   display: "flex",
   alignItems: "center",
@@ -281,6 +293,7 @@ export const socialIconLink = (isHovered, special) => ({
   textDecoration: "none",
 });
 
+// Mobile menu button
 export const mobileMenuButton = (isHovered) => ({
   padding: "0.5rem",
   color: isHovered ? colors.purple600 : colors.gray600,
