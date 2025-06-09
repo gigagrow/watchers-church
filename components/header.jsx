@@ -384,6 +384,153 @@ export default function Header() {
             </div>
           </div>
 
+          {/* Secondary Header Bar (Content remains the same) */}
+          <div style={styles.secondaryHeaderBar}>
+            <div style={{ ...styles.secondaryHeaderContainer, ...(!isMobile && styles.secondaryHeaderContainerMd) }}>
+              <div style={styles.secondaryHeaderFlex}>
+                {!isMobile && (
+                  <div style={styles.leftSectionMd}>
+                    <div style={{ position: "relative" }}>
+                      <button
+                        onClick={() => setShowCountryDropdown((prev) => !prev)}
+                        onMouseEnter={() => handleElementHover("countryBtn", true)}
+                        onMouseLeave={() => handleElementHover("countryBtn", false)}
+                        style={styles.countryLangButton(hoverStates["countryBtn"])}
+                      >
+                        <span style={styles.countryFlag}>🇺🇸</span>
+                        <ChevronDown size={14} style={styles.dropdownIcon} />
+                      </button>
+                      {showCountryDropdown && (
+                        <div style={styles.dropdownMenu}>
+                          {countries.map((country) => (
+                            <button
+                              key={country.code}
+                              onClick={() => {
+                                setShowCountryDropdown(false)
+                              }}
+                              onMouseEnter={() => handleElementHover(`countryItem-${country.code}`, true)}
+                              onMouseLeave={() => handleElementHover(`countryItem-${country.code}`, false)}
+                              style={styles.countryDropdownItem(hoverStates[`countryItem-${country.code}`])}
+                            >
+                              <span style={styles.countryFlag}>{country.flag}</span>
+                              <span style={styles.countryName}>{country.name}</span>
+                            </button>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                    <div style={{ position: "relative" }}>
+                      <button
+                        onClick={() => setShowLanguageDropdown((prev) => !prev)}
+                        onMouseEnter={() => handleElementHover("langBtn", true)}
+                        onMouseLeave={() => handleElementHover("langBtn", false)}
+                        style={styles.countryLangButton(hoverStates["langBtn"])}
+                      >
+                        <Globe size={16} style={styles.dropdownIcon} />
+                        <span style={styles.langName}>EN</span>
+                        <ChevronDown size={14} style={styles.dropdownIcon} />
+                      </button>
+                      {showLanguageDropdown && (
+                        <div style={{ ...styles.dropdownMenu, minWidth: "150px" }}>
+                          {languages.map((language) => (
+                            <button
+                              key={language.code}
+                              onClick={() => {
+                                setShowLanguageDropdown(false)
+                              }}
+                              onMouseEnter={() => handleElementHover(`langItem-${language.code}`, true)}
+                              onMouseLeave={() => handleElementHover(`langItem-${language.code}`, false)}
+                              style={styles.countryDropdownItem(hoverStates[`langItem-${language.code}`])}
+                            >
+                              <span style={styles.langName}>{language.name}</span>
+                              <span style={styles.langCode}>{language.code}</span>
+                            </button>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                    <div style={styles.faithLinksContainerMd}>
+                      <a
+                        href="#"
+                        onMouseEnter={() => handleElementHover("faithLink1", true)}
+                        onMouseLeave={() => handleElementHover("faithLink1", false)}
+                        style={styles.faithLink(hoverStates["faithLink1"])}
+                      >
+                        NEW TO THE FAITH?
+                      </a>
+                      <a
+                        href="#"
+                        onMouseEnter={() => handleElementHover("faithLink2", true)}
+                        onMouseLeave={() => handleElementHover("faithLink2", false)}
+                        style={styles.faithLink(hoverStates["faithLink2"])}
+                      >
+                        RECEIVE JESUS
+                      </a>
+                    </div>
+                  </div>
+                )}
+                <div style={styles.logoContainer}>
+                  <span style={styles.logoText}>Watch Altars</span>
+                </div>
+                <div style={styles.rightSection}>
+                  {!isMobile && (
+                    <a
+                      href="#"
+                      onMouseEnter={() => handleElementHover("supportLink", true)}
+                      onMouseLeave={() => handleElementHover("supportLink", false)}
+                      style={styles.supportLinkMd(hoverStates["supportLink"])}
+                    >
+                      SUPPORT
+                    </a>
+                  )}
+                  <div style={!isMobile ? styles.socialIconsContainerSm : { display: "none" }}>
+                    {[
+                      { icon: Instagram, href: "#" },
+                      { icon: Twitter, href: "#" },
+                      { icon: Facebook, href: "#" },
+                      { icon: Youtube, href: "#", hideOnMobile: true },
+                      { icon: Linkedin, href: "#", hideOnMobile: true },
+                      { icon: ShoppingCart, href: "#", special: true },
+                    ].map(
+                      ({ icon: Icon, href, special, hideOnMobile }, index) =>
+                        (!hideOnMobile || !isMobile) && (
+                          <a
+                            key={index}
+                            href={href}
+                            onMouseEnter={() => handleElementHover(`socialLink-${index}`, true)}
+                            onMouseLeave={() => handleElementHover(`socialLink-${index}`, false)}
+                            style={styles.socialIconLink(hoverStates[`socialLink-${index}`], special)}
+                          >
+                            <Icon size={16} />
+                          </a>
+                        ),
+                    )}
+                  </div>
+                  {!isMobile && (
+                    <a
+                      href="#"
+                      onMouseEnter={() => handleElementHover("aiWorkspaceLink", true)}
+                      onMouseLeave={() => handleElementHover("aiWorkspaceLink", false)}
+                      style={styles.supportLinkMd(hoverStates["aiWorkspaceLink"])}
+                    >
+                      A.I. WORKSPACE
+                    </a>
+                  )}
+                  {isMobile && (
+                    <button
+                      onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                      onMouseEnter={() => handleElementHover("mobileMenuBtn", true)}
+                      onMouseLeave={() => handleElementHover("mobileMenuBtn", false)}
+                      style={styles.mobileMenuButton(hoverStates["mobileMenuBtn"])}
+                    >
+                      {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                    </button>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Desktop Main Navigation */}
           {!isMobile && (
             <div style={styles.mainNavDesktop}>
