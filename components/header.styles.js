@@ -118,13 +118,23 @@ export const secondaryHeaderBar = {
   borderBottom: `1px solid ${colors.gray200}`,
 }
 
-export const secondaryHeaderContainer = { ...topNavBarContainer };
-export const secondaryHeaderContainerMd = { ...topNavBarContainerMd };
-
-export const secondaryHeaderFlex = {
+// This keeps your header centered and limited to 1100px
+export const headerContentWrapper = {
+  maxWidth: "1100px",
+  width: "100%",
+  margin: "0 auto",
+  paddingLeft: "1rem",
+  paddingRight: "1rem",
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
+};
+
+export const secondaryHeaderContainer = { ...topNavBarContainer };
+export const secondaryHeaderContainerMd = { ...topNavBarContainerMd };
+
+// Only apply vertical padding here
+export const secondaryHeaderFlex = {
   paddingTop: "0.75rem",
   paddingBottom: "0.75rem",
 };
@@ -138,11 +148,11 @@ export const leftSectionMd = {
 export const countryLangButton = (isHovered) => ({
   display: "flex",
   alignItems: "center",
-  justifyContent: "center", // center the content horizontally
+  justifyContent: "center",
   gap: "0.5rem",
   backgroundColor: isHovered ? colors.gray50 : "transparent",
-  padding: "0.5rem 1rem", // match nav item spacing
-  minWidth: "120px",      // forces consistent width with nav items (adjust as needed)
+  padding: "0.5rem 1rem",
+  minWidth: "120px", // consistent with nav width
   borderRadius: "0.25rem",
   transition: "background-color 0.2s ease-in-out",
   border: "none",
@@ -278,6 +288,7 @@ export const mobileMenuButton = (isHovered) => ({
   cursor: "pointer",
   outline: "none",
 });
+
 
 
 export const mainNavDesktop = {
