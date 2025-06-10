@@ -131,7 +131,7 @@ export const secondaryHeaderFlex = {
 }
 
 export const leftSectionMd = {
-  paddingLeft: "8rem",
+  paddingLeft: "7rem",
   display: "flex",
   alignItems: "center",
   gap: "1.5rem",
