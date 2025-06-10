@@ -327,7 +327,7 @@ export default function Header() {
                             href={href}
                             onMouseEnter={() => handleElementHover(`socialLink-${index}`, true)}
                             onMouseLeave={() => handleElementHover(`socialLink-${index}`, false)}
-                            style={styles.socialIconLink(hoverStates[`socialLink-${index}`], special)}
+                            style={styles.socialIconLink(hoverStates[`socialLink-${index}`], special: true)}
                           >
                             <Icon size={16} />
                           </a>
