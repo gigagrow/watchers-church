@@ -228,6 +228,7 @@ export const rightSection = {
   display: "flex",
   alignItems: "center",
   gap: "1rem",
+  paddingRight: "7rem",
 }
 
 export const supportLinkMd = (isHovered) => ({
