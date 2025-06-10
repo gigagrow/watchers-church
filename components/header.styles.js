@@ -90,7 +90,7 @@ export const topNavFlexContainer = {
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  gap: "0.25rem",
+  gap: "2rem",
   paddingTop: "0.5rem",
   paddingBottom: "0.5rem",
   overflowX: "auto",
