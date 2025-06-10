@@ -131,10 +131,10 @@ export const secondaryHeaderFlex = {
 }
 
 export const leftSectionMd = {
-
+  paddingLeft: "10rem",
   display: "flex",
   alignItems: "center",
-  gap: "10rem",
+  gap: "1.5rem",
 }
 
 export const countryLangButton = (isHovered) => ({
