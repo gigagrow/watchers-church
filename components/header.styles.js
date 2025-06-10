@@ -256,7 +256,7 @@ export const socialIconLink = (isHovered, special) => ({
       : "linear-gradient(to right, #2563EB, #9333EA)"
     : isHovered
       ? colors.gray50
-      : "transparent",
+      : "linear-gradient(to right, #1D4ED8, #7E22CE)",
   borderRadius: "9999px",
   transition: "all 0.2s ease-in-out",
   transform: isHovered ? "scale(1.1)" : "scale(1)",
