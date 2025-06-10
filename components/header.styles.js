@@ -300,7 +300,7 @@ export const navItemGroup = {
 export const navItemButton = (isActiveOrHovered) => ({
   display: "flex",
   alignItems: "center",
-  gap: "0.25rem",
+  gap: "2rem",
   fontSize: "0.875rem",
   fontWeight: 500,
   color: isActiveOrHovered ? colors.purple600 : colors.gray700,
