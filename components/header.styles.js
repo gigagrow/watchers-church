@@ -134,7 +134,7 @@ export const leftSectionMd = {
 
   display: "flex",
   alignItems: "center",
-  gap: "rem",
+  gap: "10rem",
 }
 
 export const countryLangButton = (isHovered) => ({
