@@ -285,6 +285,7 @@ export const mainNavContainerMd = { ...topNavBarContainerMd }
 
 export const mainNavFlex = {
   display: "flex",
+  gap: "0.75rem",
   alignItems: "center",
   justifyContent: "center",
   paddingTop: "1rem",
