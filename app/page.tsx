@@ -1,5 +1,9 @@
-import Component from "../animated-banner"
+import BuildkiteHeader from "@/buildkite-header"
 
-export default function Page() {
-  return <Component />
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-gray-50">
+      <BuildkiteHeader />
+    </main>
+  )
 }
